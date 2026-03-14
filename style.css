@@ -1,0 +1,64 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    min-height: 100vh;
+    
+    /* Center container horizontally & vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 500px;
+    max-width: 90%; /* responsive for smaller screens */
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* Inputs & button styling */
+input {
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+button {
+    padding: 10px 15px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Forecast cards */
+#forecast {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.forecastCard {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
